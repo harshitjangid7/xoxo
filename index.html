@@ -3,188 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XOXO Game</title>
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
-    body {
-      font-family: 'Rubik+Doodle+Shadow', sans-serif;
-      background-repeat: no-repeat;
-    background: #191919;
-   cursor: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoMTAuNjY2NjcsMTAuNjY2NjcpIj48cGF0aCBkPSJNNSwyMy45MzJ2LTIzLjAyMWwxNy4yNDksMTUuMzMybC05LjgyMywxLjUzM3pNNyw1LjM2NHYxNC4zMTJsNC41NzQsLTMuNzkxbDYuMTc3LC0wLjk2NXoiPjwvcGF0aD48L2c+PC9nPgo8L3N2Zz4=") 3 0, default;
-    }
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    data-purpose="Layout StyleSheet"
+    title="Web Awesome"
+    href="/css/app-wa-9846671ed7c9dd69b10c93f6b04b31fe.css?vsn=d"
+  >
 
-     .main{
-        display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 84vh;
-      margin: 0;
-     }
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    >
 
-     h1{
-        text-transform: capitalize;
-    color: #fff;
-    margin: 0;
-    font-family: "Rubik Doodle Shadow";
-    font-size: 50px;
-    margin-top: 30px;
-    text-align: center;
-     }
- 
-     .x{
-        text-shadow:  0 0 30px #1a94ff, 0 0 40px #1a94ff, 0 0 50px #1a94ff, 0 0 60px #1a94ff, 0 0 70px #1a94ff;
-     }
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css"
+    >
 
-     .o{
-        text-shadow:  0 0 30px #ff5050, 0 0 40px #ff5050, 0 0 50px #ff5050, 0 0 60px #ff5050, 0 0 70px #ff5050;
-     }
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css"
+    >
 
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css"
+    >
 
-    #board {
-      display: grid;
-      grid-template-columns: repeat(3, 100px);
-      grid-gap: 10px;
-    }
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
+    >
 
-    .cell {
-      width: 100px;
-      height: 100px;
-      background-color: transparent;
-      border: 2px solid #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 12px;
-      font-size: 4em;
-      font-family: "Rubik Scribble";
-      cursor: pointer;
-    }
-
-    .cell:hover {
-      background-color: #5e5e5e;
-    }
-
-      /* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #181818; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #505050; 
-  border-radius: 3px;
-}
-  </style>
+        <!-- Google fonts. -->
+        <link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'/>
+        <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'/>
+        <!-- Use font awesome icons. -->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <!-- Use firebase app and database. -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    
+        <!-- The CSS and JS file must be declared after the things above-->
+        <link rel="stylesheet" href="index.css"/>
+        <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
-<h1 style="height: 30px;">
-    <span class="x" style="color: rgb(255, 255, 255);">Player </span> 
-    <span class="x" style="color: rgb(70 175 255);">V</span>/<span class="o" style="color: rgb(255, 87, 87);">S</span>
-    <span class="o" style="color: rgb(255, 255, 255);">Bot</span>
-</h1>
-<div class="main"><div id="board"></div></div>
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const board = document.getElementById('board');
-    let currentPlayer = 'X';
-    let cells = Array.from({ length: 9 });
-
-    cells.forEach((_, index) => {
-      const cell = document.createElement('div');
-      cell.classList.add('cell');
-      cell.dataset.index = index;
-      cell.addEventListener('click', cellClick);
-      board.appendChild(cell);
-    });
-
-    function cellClick(event) {
-      const cell = event.target;
-      const index = cell.dataset.index;
-
-      if (!cells[index]) {
-        cells[index] = currentPlayer;
-        cell.textContent = currentPlayer;
-        cell.style.color = currentPlayer === 'X' ? '#47a7f5' : '#FF5757';
-
-        if (checkWinner()) {
-          alert(`${currentPlayer} wins!`);
-          resetGame();
-        } else if (cells.every(cell => cell)) {
-          alert('It\'s a tie!');
-          resetGame();
-        } else {
-          currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-          if (currentPlayer === 'O') {
-            setTimeout(botMove, 500);
-          }
-        }
-      }
-    }
-
-    function botMove() {
-      const emptyCells = cells.reduce((acc, cell, index) => {
-        if (!cell) {
-          acc.push(index);
-        }
-        return acc;
-      }, []);
-
-      const randomIndex = Math.floor(Math.random() * emptyCells.length);
-      const botIndex = emptyCells[randomIndex];
-
-      cells[botIndex] = 'O';
-      const botCell = document.querySelector(`[data-index="${botIndex}"]`);
-      botCell.textContent = 'O';
-      botCell.style.color = '#ff5757';
-
-      if (checkWinner()) {
-        alert('O (Bot) wins!');
-        resetGame();
-      } else if (cells.every(cell => cell)) {
-        alert('It\'s a tie!');
-        resetGame();
-      } else {
-        currentPlayer = 'X';
-      }
-    }
-
-    function checkWinner() {
-      const winPatterns = [
-        [0, 1, 2],
-        [3, 4, 5],
-        [6, 7, 8],
-        [0, 3, 6],
-        [1, 4, 7],
-        [2, 5, 8],
-        [0, 4, 8],
-        [2, 4, 6]
-      ];
-
-      return winPatterns.some(pattern => {
-        const [a, b, c] = pattern;
-        return cells[a] && cells[a] === cells[b] && cells[a] === cells[c];
-      });
-    }
-
-    function resetGame() {
-      cells = Array.from({ length: 9 });
-      currentPlayer = 'X';
-
-      document.querySelectorAll('.cell').forEach(cell => {
-        cell.textContent = '';
-        cell.style.color = '#000';
-      });
-    }
-  });
-</script>
-
+    <header>
+      <div class="main-header-2"></div>
+    <div class="main-header">
+      <a class="logo" href="index.html">SPEVCS.</a>
+      <span class="text">Services</span>
+      <span class="text">Gallery</span>
+      <span class="text">Products</span>
+      <span class="text">About</span>
+      <span class="text">Contact</span>
+    </div>
+  </header>
 </body>
 </html>
